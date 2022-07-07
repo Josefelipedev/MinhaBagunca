@@ -1,0 +1,63 @@
+body{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #f2f2f2;
+}
+#container{
+	width: 85%;
+	margin: 0 auto;
+	background: #fff url(../imagens/coluna.jpg) repeat-y left;
+	min-width: 720px;
+	max-width: 1280px;
+}
+#marca{
+	width: 100%;
+	height: 200px;
+	background: #225992 url(../imagens/cabecalho2.jpg) no-repeat;
+	text-align: center;
+	line-height: 200px;
+}
+
+
+#navegacao{
+
+	width: 15%;
+	float: left;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background: #d1d1d1;
+}
+
+#rodape {
+	clear: both;
+	background: #c4c4c4;
+	padding: 10px;
+	margin-top: 10px;
+}
+#conteudo-principal{
+
+	width: 64%;
+	float: left;
+}
+#conteudo-secundario{
+	
+	width: 35%;
+	float: right;
+	height: 400px;
+	background: #d1d1d1; 
+	
+}
+
+ul li  {
+	list-style: none;
+	text-decoration: none;
+	padding: 5px 10px;
+	line-height: 3em;
+}
+a{
+	text-decoration: none;
+	color: #9E9E9E;
+}
+a:hover {
+	color: #fff;
+	background: #2c2c2c;
+}

@@ -1,0 +1,20 @@
+/*Herança e especificidade*/
+/*!important*/
+/*body{
+	color: red;
+	border: 1px solid blue;
+	
+}*/
+/*Se um seletor for mais específico que outro 
+a regra mais específico será aplicada
+(terá precedência sobre regras mais gerais)*/
+
+*{
+	color: red;
+}
+h2{
+	color: blue;
+}
+h2.verde{
+	color: green;
+}

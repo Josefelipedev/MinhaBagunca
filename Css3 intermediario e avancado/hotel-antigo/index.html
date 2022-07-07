@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chalé Hotel</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	
+
+</head>
+<body onload="time()">
+	
+<div id="container">
+	<!-- inicio topo-->
+	<div id="topo">
+		
+		<div id="area-logo">
+			<h1 class="logo">
+				<a href="">Chále Hotel</a>
+			</h1>
+			
+		</div>
+		<div id="area-menu">
+			<div id="conteudo-menu">
+				<div id="menu-locais">
+					<span class="locais">Rio de Janeiro - São Paulo - Belo Horizonte</span>
+					<a class="revervar" href="">Reservar</a>
+					<div style="clear: both;"></div>
+				<!-- javascript -->
+				<div id="java">
+					
+					<h2>Hora</h2>
+					<p id="txt"></p>
+				
+				</div>
+				</div>
+				<div class="menu">
+				<ul id="navegacao">
+					<li>
+					<a href="">Home</a>
+					</li>
+					<li>
+					<a href="">História</a>
+					</li>
+					<li><a href="">Imprensa</a>
+					</li>
+					<li>
+					<a href="">Gastronomia</a>
+					</li>
+					<li>
+					<a href="">Contato</a>
+					</li>
+				</ul>
+				<img class="depoimento" src="imagens/depoimento.png">
+
+				</div>
+
+
+			</div>
+			
+		</div>
+	</div><!--fim do topo-->
+	<div id="area-principal">
+		<div class="conteudo">
+			<h2>What is Lorem Ipsum?</h2>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		
+		<div id="email">
+			<form name="f1">
+				<h3>E-mail para Contato:</h3>
+					<table>
+						<tr>
+							<td>
+								<input type="text" name="email" onblur="validacaoEmail(f1.email)"  maxlength="60" size='65'>
+							</td>
+							<td>
+							<div id="msgemail">
+								<input name="submit" type="submit" value=" ENVIAR "/>
+							</div>
+							</td>
+						</tr>
+					</table>
+			</form>
+	</div>
+	</div>
+	</div>
+	<div id="area-lateral">
+		<div class="conteudo">
+			<ul id="beneficios">
+				<li>
+					<a href="">
+						<img src="imagens/apartamento.jpg" width="150px" alt="Apartamento">
+						<h3>Apartamento</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="imagens/restaurante.jpg" width="150px" alt="Restaurante">
+						<h3>Restaurante</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					</a>
+				</li>				<li>
+					<a href="">
+						<img src="imagens/piscina.jpg" width="150px" alt="Piscina">
+						<h3>Piscina</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					</a>
+				</li>
+
+			</ul>
+	
+
+
+		</div>
+		
+
+	</div>
+	<div id="rodape">
+		<span>&copy; copyright 2000-2020 Chalé Hotel</span>
+	</div>
+
+<script language=javascript type="text/javascript">
+		function time(){
+				today=new Date();
+				h=today.getHours();
+				m=today.getMinutes();
+				s=today.getSeconds();
+				document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+				setTimeout('time()',500);
+				}
+		function validacaoEmail(field) {
+			usuario = field.value.substring(0, field.value.indexOf("@"));
+			dominio = field.value.substring(field.value.indexOf("@")+ 1, field.value.length);
+
+			if ((usuario.length >=1) &&
+				(dominio.length >=3) &&
+				(usuario.search("@")==-1) &&
+				(dominio.search("@")==-1) &&
+				(usuario.search(" ")==-1) &&
+				(dominio.search(" ")==-1) &&
+				(dominio.search(".")!=-1) &&
+				(dominio.indexOf(".") >=1)&&
+				(dominio.lastIndexOf(".") < dominio.length - 1)){
+			document.getElementById("msgemail").innerHTML="E-mail válido";
+			alert("E-mail valido");
+	}
+		else{
+				document.getElementById("msgemail").innerHTML="<font color='red'>E-mail inválido </font>";
+				alert("E-mail invalido");
+	}
+}			
+
+</script>
+	
+
+</div>
+
+</body>
+</html>
