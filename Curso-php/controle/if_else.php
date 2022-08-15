@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <div class="titulo">If Else</div>
 
 <?php
@@ -14,32 +13,25 @@ if(true){//; colocando ele desligar o bloco de codigo
     echo "<br>Serei impresso novamente?";
 
 }
-=======
-<div class="titulo">If e Else</div>
 
-<?php
-if(true){  //colocar ; terminar e não executa o bloco
-    echo "Serei impresso?<br>";
-    echo "Serei impresso novamente?";
-}// "" string vazia vai ser false e string" " com espaço ou algum coisa vai ser true
-   
+if(true)
+    echo "Verdadeiro<br>";
 
-if(true){
-    echo "Verdadeiro<br> - Parte A ";
-    echo "Verdadeiro<br> - Parte B ";
-}else{
-    echo "Falso<br> - Parta A";
-    echo "Falso<br> - Parta B";
-}
+else
+    echo "Falso<br>";
+
+echo "Fim<br>";
+
+
 if(false){
-    echo "Passo A <br>";
+    echo "Passo A<br>";
+
 }else if(true){
-    echo "Passo B<br>";
+echo "Passo B<br>";
+}
+else if(true){
+    echo "Passo c<br>";
 }else{
     echo "Ultimo Passo<br>";
 }
-
-
-
 echo "Fim<br>";
->>>>>>> 26a05fb064468e903486d6fa54e76a233c68dab3

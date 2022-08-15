@@ -20,7 +20,26 @@
                     <ul>
                         <li>
                             <a href="exercicio.php?dir=controle&file=if_else">
-                                Olá PHP
+                                IF and ELSE
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=controle&file=operadores_relacionais">
+                            Op. Relacionais
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=controle&file=desafio_pi">
+                            Desafio do PI
+
+                            </a>
+                        </li>
+                       
+                        <li>
+                            <a href="exercicio.php?dir=controle&file=operadores_logicos">
+                            Operadores Lógicos
 
                             </a>
                         </li>
@@ -163,17 +182,6 @@
                             </a>
                         </li>
                     </ul>
-                    <div class="modulo vermelho">
-                    <h3>Módulo 04 -Controle </h3>
-                    <ul>
-                        <li>
-                            <a href="exercicio.php?dir=controle&file=if_else">
-                             If e Else
-
-                            </a>
-                        </li>
-                    </ul>
-                    </div>
                 </div>
                
               
