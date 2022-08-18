@@ -44,6 +44,10 @@
         echo "Fica em casa Saudável!";
     }
 
+//    $t1 = $_POST['t1'] === '1';
+//    $t2 = !!$_POST['t2'];
+//    $tv = '';
+//    $sorvete = false;
 
 // echo $_POST['t1'];
  //echo $_POST['t2'];
