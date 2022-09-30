@@ -1,37 +1,30 @@
 <div class="titulo">If Else</div>
 
 <?php
-echo "Linha 1";
-echo "Linha 2";
-
-if(false)//false só valido apenas para primeira linha sem {}
-    echo "Serei impresso?";
-    echo "<br>Serei impresso novamente?";
-
-if(true){//; colocando ele desligar o bloco de codigo
-    echo "Serei impresso?";
-    echo "<br>Serei impresso novamente?";
-
+if(true) {
+    echo "Serei impresso?<br>";
 }
 
-if(true)
-    echo "Verdadeiro<br>";
+if(false) {
+    echo "Verdadeiro - Parte A<br>";
+    echo "Verdadeiro - Parte B<br>";
+} else {
+    echo "Falso - Parte A<br>";
+    echo "Falso - Parte B<br>";
+}
 
-else
-    echo "Falso<br>";
-
-echo "Fim<br>";
-
-
-if(false){
+if(false) {
     echo "Passo A<br>";
+} else if(false) {
+    echo "Passo B<br>";
+} elseif(false) {
+    echo "Passo C<br>";
+} elseif(false) {
+    echo "Passo D<br>";
+} elseif(false) {
+    echo "Passo E<br>";
+} else {
+    echo "Úlitmo Passo<br>";
+}
 
-}else if(true){
-echo "Passo B<br>";
-}
-else if(true){
-    echo "Passo c<br>";
-}else{
-    echo "Ultimo Passo<br>";
-}
 echo "Fim<br>";

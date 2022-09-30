@@ -1,13 +1,12 @@
 <div class="titulo">Variáveis Variáveis</div>
 
-<?php 
-$a ='valor A';
-$$a ='valorAA';
-
+<?php
+$a = 'valorA';
+$$a = 'valorAA';
 echo "$a {$$a} ${$a} $valorA";
-echo "<br>";
-$epa ='opa';
+
+echo '<br>';
+$epa = 'opa';
 $opa = 'vish';
-$vish = 'eita!!!!!!'
-echo "$epa {$$epa}";
-echo "<br>", "$epa {$$epa} {$$$epa}";
+$vish = 'eita!!!!';
+echo "$epa {$$epa} {$$$epa}";
