@@ -54,13 +54,7 @@ if($_POST['email']) {
     <main class="principal">
         <div class="conteudo">
             <h3>Identifique-se</h3>
-            <?php if ($_SESSION['erros']): ?>
-                <div class="erros">
-                    <?php foreach ($_SESSION['erros'] as $erro): ?>
-                        <p><?= $erro ?></p>
-                    <?php endforeach ?>
-                </div>
-            <?php endif ?>
+          
             <form action="#" method="post">
                 <div>
                     <label for="email">E-mail</label>
